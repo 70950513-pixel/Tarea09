@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagen/cafe.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="contenedor">
+
+        <div id="contenido">
+
+            <div id="cabecera">
+                <header>
+                    <h1>Albergue de conejos felices</h1>
+                </header>
+                <nav>
+                    <ul id="menu2">
+                        <li><a href="index.html"><i class="fa-regular fa-heart"></i>INICIO</a></li>
+                        <li><a href="blog.html"><i class="fa-solid fa-pen"></i>BLOG</a></li>
+                        <li><a href="galeria.html"><i class="fa-solid fa-image"></i>GALERIA</a></li>
+                        <li><a href="video.html"><i class="fa-solid fa-camera"></i>VIDEOS</a></li>
+                        <li><a href="contactos.html"><i class="fa-solid fa-magnifying-glass"></i>CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section id="contacto">
+
+                <!-- Tabla -->
+                <div class="info">
+                    <table>
+                        <caption>Información de Contacto</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Medio</th>
+                                <th scope="col">Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Dirección:</th>
+                                <td>Av. Globo Terráqueo 7131, Lima, Perú. | Jr. Neptuno 123 Urbanización Sol de Oro Los Olivos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Teléfonos:</th>
+                                <td>51 997 577 470 | 989 078 484 5335242</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email:</th>
+                                <td>ventas@transportescarmelo.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="horario">
+                        <h2>Horario de atención</h2>
+                        <p><strong>Área de Ventas:</strong><br>de Lunes a Viernes de 8 am a 6 pm.</p>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="formulario">
+                    <h2>Escríbenos</h2>
+                    <p class="nota">Los campos con barra azul son obligatorios.</p>
+                    <form name="contacto" action="#" method="post" autocomplete="on">
+                        <label for="nombre">Nombre y Apellido *</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60"
+                               autocomplete="name" placeholder>
+
+                        <label for="celular">Celular *</label>
+                        <input type="tel" id="celular" name="celular" required minlength="9" maxlength="9"
+                               pattern="9[0-9]{8}" title="9 dígitos, empezando con 9 (ejemplo: 999999999)"
+                               autocomplete="tel" placeholder>
+
+                        <label for="correo">Correo electrónico *</label>
+                        <input type="email" id="correo" name="correo" required maxlength="80"
+                               autocomplete="email" placeholder>
+
+                        <label for="ruc">RUC (Opcional)</label>
+                        <input type="text" id="ruc" name="ruc" inputmode="numeric" maxlength="11"
+                               pattern="(10|15|17|20)[0-9]{9}" title="11 dígitos (empieza con 10, 15, 17 o 20)"
+                               placeholder>
+
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="500"
+                                  placeholder></textarea>
+
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877.0277763186791!2d-76.89615145194472!3d-12.082211519332828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c137687cfde5%3A0xaf834cde44fd7529!2sEl%20Para%C3%ADso%20de%20los%20Cones!5e0!3m2!1ses!2spe!4v1793843478054!5m2!1ses!2spe" title="Ubicación en Google Maps" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+            </section>
+
+            <footer>
+                <p>Síguenos en nuestras redes sociales:</p>
+
+                <div id="iconos">
+                    <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

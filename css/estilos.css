@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#contenido{
+    max-width:800px;
+    margin:0 auto;
+    border: 2px solid blue;
+}
+
+
+h1,h2,h3,h4{
+    text-align: center;
+    padding: 20px;
+    font-family: "Great Vibes", cursive;
+    font-weight:600;
+}
+
+p{
+    text-align: justify;
+}
+
+img{
+    max-width:100%;
+    display:block
+}
+
+#principal{
+    width:100%;
+    height: 100vh;
+    background-image: url(../imgBonejos/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
+#centro{
+    width:70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    background-color: #ffffff8c;
+    box-shadow: 5px 5px 12px 5px #ffffff8c;
+    border-radius: 100px;
+}
+
+#centro h1{
+    font-family: "Great Vibes";
+    text-align: center;
+    padding: 20px;
+    font-family: "Great Vibes", cursive;
+    font-size: 3em;
+}
+
+#centro #menu a{
+    color:black;
+}
+
+#centro p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#centro nav{
+    padding: 15px 0px;
+    background-color: rgb(253, 253, 253);
+}
+
+#centro #menu,#menu2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#centro li{
+    list-style-type: none;
+    padding:10px;
+    
+}
+
+#centro #menu a{
+    text-decoration: none;
+    color:rgb(5, 5, 5);
+    font-size: 20px;
+}
+
+#centro #menu a:hover{
+    opacity: 0.5;
+}
+
+#centro #iconos{
+    text-align: center;      
+}
+
+#centro i{
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(5, 5, 5);
+}
+
+#centro #iconos i:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+/* HEADER */
+
+#cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(240, 255, 248);
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: #fff;
+}
+
+/* NAV */
+
+#menu2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding: 15px;
+}
+
+#menu2 li{
+    list-style: none;
+}
+
+
+#menu2 li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* SECTION */
+#contenido-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+#grupo{
+    display: grid;
+    grid-template-columns: 0.7fr 2.5fr;
+    gap: 15px;
+}
+
+#galeria{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#galeria-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#galeria-img{
+    box-shadow: 5px 5px 7px 3px rgba(32, 32, 32, 0.502);
+}
+
+#grupo-h1{
+    display: grid;
+    grid-template-columns: 2.5fr 0.3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#autor{
+    width:100%;
+    text-align: center;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#yo{
+    width:50px;
+    border-radius: 50%;
+    
+}
+
+#ola{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+#iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#iconos i{
+    font-size: 2em;
+    color:rgb(5, 5, 5);
+}
+
+#iconos i:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1.35fr;
+    gap: 28px;
+    padding: 0 24px 40px;
+    align-items: start;
+}
+#contacto h2,
+#contacto caption{
+    font-family: "Great Vibes", cursive;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: left;
+    color: #2f4560;
+    margin: 0 0 12px;
+}
+#contacto .nota{
+    font-size: 12px;
+    color: #5b6673;
+    margin-bottom: 4px;
+}
+ 
+
+#contacto table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cfd4da;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+#contacto caption{
+    caption-side: top;
+    margin-bottom: 8px;
+}
+#contacto thead th{
+    background: #2f4560;
+    color: #fff;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 13px;
+}
+#contacto tbody th,
+#contacto tbody td{
+    padding: 10px;
+    vertical-align: top;
+    line-height: 1.5;
+    border-top: 1px solid #dde3ea;
+}
+#contacto tbody th{
+    text-align: left;
+    white-space: nowrap;
+    color: #2f4560;
+}
+#contacto tbody tr:first-child{
+    background: #e3edf7;
+}
+#contacto tbody tr:nth-child(even){
+    background: #f1f5f9;
+}
+#contacto tbody tr:last-child{
+    background: #fff7dd;
+    border-bottom: 2px solid #2f4560;
+}
+#contacto .horario p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+ 
+
+#contacto .formulario label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+    margin: 12px 0 4px;
+}
+#contacto .formulario input,
+#contacto .formulario textarea{
+    width: 100%;
+    border: 1px solid #b9c2cc;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #fff;
+}
+#contacto .formulario textarea{
+    height: 120px;
+    resize: vertical;
+}
+#contacto .formulario input:focus,
+#contacto .formulario textarea:focus{
+    outline: 2px solid #2f4560;
+    outline-offset: 1px;
+}
+
+#contacto .formulario input:not(:placeholder-shown):valid,
+#contacto .formulario textarea:not(:placeholder-shown):valid{
+    background-color: #eaf6ee;
+    border-color: #4c9a68;
+}
+#contacto .formulario input:not(:placeholder-shown):invalid,
+#contacto .formulario textarea:not(:placeholder-shown):invalid{
+    background-color: #fdeaea;
+    border-color: #d0021b;
+}
+#contacto .formulario input:required{
+    border-left: 4px solid #2f4560;
+}
+#contacto .formulario input:optional{
+    border-left: 4px solid #cfd4da;
+}
+#contacto .formulario ::placeholder{
+    color: #8a94a0;
+}
+#contacto .formulario button{
+    width: 100%;
+    min-height: 44px;
+    margin-top: 16px;
+    background: #2f4560;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#contacto .formulario button:hover,
+#contacto .formulario button:focus-visible{
+    background: #1f3148;
+}
+ 
+
+#contacto .mapa{
+    height: 100%;
+    min-height: 380px;
+    border: 1px solid #cfd4da;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#contacto .mapa iframe{
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+}
+ 
+
+@media screen and (max-width: 992px){
+    #contacto{
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        padding: 0 16px 32px;
+    }
+    #contacto .mapa{
+        grid-column: 1 / -1;
+        min-height: 320px;
+    }
+    #contacto .mapa iframe{ min-height: 320px; }
+}
+
+@media screen and (max-width: 768px){
+    #contacto{
+        grid-template-columns: 1fr;
+    }
+    #contacto h2,
+    #contacto caption{ font-size: 30px; }
+}
+
+@media screen and (max-width: 576px){
+    #contacto{ padding: 0 12px 28px; }
+    #contacto table{ font-size: 13px; }
+    #contacto tbody th{ white-space: normal; }
+    #contacto .mapa,
+    #contacto .mapa iframe{ min-height: 260px; }
+}
+
+@media screen and (max-width: 480px){
+    #contacto h2,
+    #contacto caption{ font-size: 26px; }
+    #contacto .formulario input,
+    #contacto .formulario textarea{ font-size: 16px; }
+    #contacto .mapa,
+    #contacto .mapa iframe{ min-height: 220px; }
+}
